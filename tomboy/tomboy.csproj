@@ -28,7 +28,6 @@ This project will be merged into the main Tomboy project at git.gnome.org at som
 Macboy is based on MonoMac and will be fully compatible with Tomboy on Linux or Windows.
 ----</Description>
     <ReleaseVersion>0.3.1</ReleaseVersion>
-    <SuppressXamMacUpsell>True</SuppressXamMacUpsell>
     <newfilesearch>OnLoad</newfilesearch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -170,6 +169,12 @@ Macboy is based on MonoMac and will be fully compatible with Tomboy on Linux or 
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="LICENSE.txt" />
+    <None Include="AppDelegate.designer.cs">
+      <Visible>False</Visible>
+    </None>
+    <None Include="tomboy.in">
+      <Visible>False</Visible>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Mono\MonoMac\v0.0\Mono.MonoMac.targets" />

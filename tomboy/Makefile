@@ -32,7 +32,7 @@ SERVICESTACK_ORMLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.Or
 MONO_DATA_SQLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.OrmLite.Sqlite.Mono.3.9.66/lib/net35/Mono.Data.Sqlite.dll
 DEVDEFINED_OAUTH_DLL_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll
 DEVDEFINED_OAUTH_DLL_MDB_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll.mdb
-MONOMAC_DLL_SOURCE=../../../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
+MONOMAC_DLL_SOURCE=../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
 
 endif
 
@@ -58,7 +58,7 @@ SERVICESTACK_ORMLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.Or
 MONO_DATA_SQLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.OrmLite.Sqlite.Mono.3.9.66/lib/net35/Mono.Data.Sqlite.dll
 DEVDEFINED_OAUTH_DLL_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll
 DEVDEFINED_OAUTH_DLL_MDB_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll.mdb
-MONOMAC_DLL_SOURCE=../../../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
+MONOMAC_DLL_SOURCE=../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
 
 endif
 
@@ -85,7 +85,7 @@ SERVICESTACK_ORMLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.Or
 MONO_DATA_SQLITE_DLL_SOURCE=../tomboy-library/nuget-packages/ServiceStack.OrmLite.Sqlite.Mono.3.9.66/lib/net35/Mono.Data.Sqlite.dll
 DEVDEFINED_OAUTH_DLL_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll
 DEVDEFINED_OAUTH_DLL_MDB_SOURCE=../tomboy-library/DevDefined.OAuth/src/DevDefined.OAuth/bin/Debug/DevDefined.OAuth.dll.mdb
-MONOMAC_DLL_SOURCE=../../../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
+MONOMAC_DLL_SOURCE=../../../../../../Applications/Xamarin\ Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.MonoMac/MonoMac.dll
 
 endif
 
@@ -175,6 +175,8 @@ RESOURCES = \
 EXTRAS = \
 	Info.plist \
 	LICENSE.txt \
+	AppDelegate.designer.cs \
+	tomboy.in \
 	ToolbarNotesTemplate.pdf \
 	Default.css \
 	note.html \
