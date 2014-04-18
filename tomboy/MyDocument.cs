@@ -34,6 +34,8 @@ using MonoMac.AppKit;
 using MonoMac.Foundation;
 using MonoMac.WebKit;
 
+using Tomboy.MarkDown;
+
 namespace Tomboy
 {
 	public partial class MyDocument : NSDocument
@@ -413,6 +415,31 @@ namespace Tomboy
             _loadingFromString = false;
         }
 
+
+        partial void MarkdownEdit(NSObject sender)
+        {
+            SaveData();
+
+            _loadingFromString = true;
+            var content = translator.From(currentNote);
+            var beginIndx = content.IndexOf(currentNote.Title, StringComparison.CurrentCulture);
+
+            if (beginIndx != -1 && content.Length > currentNote.Title.Length)
+            {
+                var len = currentNote.Title.Length;
+                content = content.Remove(beginIndx, (len + 1));
+            }
+
+            Markdown parser = new Markdown();
+
+            string htmlContent = parser.Transform(content);
+
+            noteWebView.MainFrame.LoadHtmlString(htmlContent,null);
+
+            _loadingFromString = false;
+
+        }
+
 		partial void DeleteNote (NSObject sender)
 		{
 			NSAlert alert = new NSAlert () {
@@ -427,6 +454,7 @@ namespace Tomboy
 			                  new MonoMac.ObjCRuntime.Selector ("alertDidEnd:returnCode:contextInfo:"),
 			                  IntPtr.Zero);
 		}
+
 
 		[Export ("alertDidEnd:returnCode:contextInfo:")]
         [SuppressMessage("Microsoft.Design", "CA1011:ConsiderPassingBaseTypesAsParameters")]

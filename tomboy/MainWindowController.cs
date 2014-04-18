@@ -79,7 +79,7 @@ namespace Tomboy
 
 			KeyboardListener.NoteContentChanged += NoteContentChanged;
 							
-			loadNoteWebKit ();
+            loadNoteWebKit ();
 			setTitle ("Tomboy");
 			noteWebView.OnFinishedLoading += delegate {
 				installKeyboardHandler ();

@@ -48,6 +48,9 @@ namespace Tomboy
 		[Action ("DeleteNote:")]
 		partial void DeleteNote (MonoMac.Foundation.NSObject sender);
 
+		[Action ("MarkdownEdit:")]
+		partial void MarkdownEdit (MonoMac.Foundation.NSObject sender);
+
 		[Action ("noteTitleFieldSelector:")]
 		partial void NoteTitleFieldSelector (MonoMac.Foundation.NSObject sender);
 

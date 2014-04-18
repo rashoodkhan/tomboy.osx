@@ -159,6 +159,22 @@
                             <action selector="AddBulletPoint:" target="-2" id="9Vj-dA-oUq"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="ECC6E29F-A9A4-46AD-8E42-F6947475C096" label="Markdown" paletteLabel="Markdown" id="19c-AE-y2x">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="30" height="25"/>
+                        <size key="maxSize" width="116" height="25"/>
+                        <button key="view" verticalHuggingPriority="750" id="Xwz-t5-vhB">
+                            <rect key="frame" x="0.0" y="14" width="80" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" title="Markdown" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RW5-o7-FfN">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="MarkdownEdit:" target="-2" id="ZIF-qB-Z8N"/>
+                        </connections>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="90"/>
